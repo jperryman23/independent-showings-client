@@ -33,7 +33,7 @@ class App extends Component {
             </div>
 
 
-            <div className="large ui inverted blue animated fade button" tabindex="0">
+            <div className="large ui inverted blue animated fade button" tabIndex="0">
                 <div className="visible content">New User</div>
                 <div className="hidden content"> Sign Up </div>
             </div>

@@ -22,3 +22,16 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+
+.home-page.container {
+    background-image: url("/../../images/downtown.jpg");
+    background-size: cover;
+    height: 800px;
+}
+
+.contentBox {
+    margin-left: 5em;
+    /*border: 1px solid black;*/
+
+}
