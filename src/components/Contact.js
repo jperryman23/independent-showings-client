@@ -19,6 +19,11 @@ class Contact extends Component {
             <div className="container">
                 <h3>Contact List</h3>
 
+                <div>
+                <fetchContacts contact={this.props.contact} />
+                </div>
+
+
             </div>
 
             </div>
