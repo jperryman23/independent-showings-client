@@ -13,7 +13,7 @@ import {
 import Home from './components/Home';
 import About from './components/About';
 import BuyerLogin from './components/BuyerLogin';
-import BrokerLogin from './components/BrokerLogin';
+import AgentLogin from './components/AgentLogin';
 import Development from './components/Development';
 import Contact from './components/Contact';
 
@@ -47,7 +47,7 @@ class App extends Component {
             <Link className="item"  to="/Home">Home</Link>
             <Link className="item"  to="/About">About</Link>
             <Link className="item"  to="/BuyerLogin">Buyer Login </Link>
-            <Link className="item"  to="/BrokerLogin">BrokerLogin</Link>
+            <Link className="item"  to="/AgentLogin">Agent Login</Link>
             <Link className="item"  to="/Development">Development</Link>
             <Link className="item"  to="/Contact">Contact</Link>
         </div>
@@ -57,7 +57,7 @@ class App extends Component {
         <Route path="/Home" component={Home} />
         <Route path="/About" component={About} />
         <Route exact path="/BuyerLogin" component={BuyerLogin} />
-        <Route exact path="/BrokerLogin" component={BrokerLogin} />
+        <Route exact path="/AgentLogin" component={AgentLogin} />
         <Route exact path="/Development" component={Development} />
         <Route exact path="/Contact" component={Contact} />
 
