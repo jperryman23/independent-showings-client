@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import '../App.css'
 
-import {
-  // BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
+// import {
+//   BrowserRouter as Router,
+//   Route,
+//   Link
+// } from 'react-router-dom'
 
 export default class AgentLogin extends Component {
     render(){

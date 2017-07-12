@@ -41,8 +41,6 @@ class App extends Component {
 
         </div>
 
-
-
         <div className="ui six item menu">
             <Link className="item"  to="/Home">Home</Link>
             <Link className="item"  to="/About">About</Link>

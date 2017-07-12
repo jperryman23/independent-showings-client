@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 import '../App.css'
 
 export default class BuyerLogin extends Component {
@@ -28,6 +29,7 @@ export default class BuyerLogin extends Component {
                                 <button className="ui button" type="submit">Submit</button>
                             </form>
                         </div>
+
 
             </div>
         )
