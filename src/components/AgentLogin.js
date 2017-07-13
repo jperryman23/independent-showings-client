@@ -18,18 +18,23 @@ export default class AgentLogin extends Component {
                 <div className="six wide field">
                     <label>Agent ID</label>
                     <input type="text" name="AgentID" placeholder="ID Number" />
-                    </div>
-                    <div className="six wide field">
+                </div>
+
+                <div className="six wide field">
                         <label>Password</label>
                         <input type="text" name="password" placeholder="Enter Password" />
+                </div>
+
+                <div className="six wide field">
+                        <div className="ui checkbox">
+                            <input type="checkbox" tabIndex="0" className="hidden" />
+
+                            <label>By clicking Sign up or Continue with, I agree to Independent Brokers
+                            <a className="" href="/terms-conditions" target="_blank"> Terms and Conditions</a>
+                            </label>
+
                         </div>
-                        <div className="six wide field">
-                            <div className="ui checkbox">
-                                <input type="checkbox" tabIndex="0" className="hidden" />
-                                    <label>By clicking Sign up or Continue with, I agree to Independent Brokers
-                                        <a className="" href="/terms-conditions" target="_blank"> Terms and Conditions</a>
-                                    </label>
-                                </div>
+
                         </div>
                             <button className="ui button" type="submit">Submit</button>
                         </form>

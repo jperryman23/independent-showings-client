@@ -27,7 +27,8 @@
 .home-page.container {
     background-image: url("/../../images/downtown.jpg");
     background-size: cover;
-    height: 800px;
+    height: 700px;
+    width: 100%;
 }
 
 .contentBox {

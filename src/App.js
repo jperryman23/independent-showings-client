@@ -9,7 +9,7 @@ import {
   Link
 } from 'react-router-dom'
 
-
+import Splash from './components/Splash';
 import Home from './components/Home';
 import About from './components/About';
 import BuyerLogin from './components/BuyerLogin';
@@ -42,18 +42,18 @@ class App extends Component {
         </div>
 
         <div className="ui six item menu">
-            <Link className="item"  to="/Home">Home</Link>
-            <Link className="item"  to="/About">About</Link>
-            <Link className="item"  to="/BuyerLogin">Buyer Login </Link>
-            <Link className="item"  to="/AgentLogin">Agent Login</Link>
+            <Link className="item" to="/Home">Home</Link>
+            <Link className="item" to="/About">About</Link>
+            <Link className="item" to="/BuyerLogin">Buyer Login </Link>
+            <Link className="item" to="/AgentLogin">Agent Login</Link>
             <Link className="item"  to="/Development">Development</Link>
             <Link className="item"  to="/Contact">Contact</Link>
         </div>
 
 
-
-        <Route path="/Home" component={Home} />
-        <Route path="/About" component={About} />
+        <Route exact path="/" component={Splash} />
+        <Route exact path="/Home" component={Home} />
+        <Route exact path="/About" component={About} />
         <Route exact path="/BuyerLogin" component={BuyerLogin} />
         <Route exact path="/AgentLogin" component={AgentLogin} />
         <Route exact path="/Development" component={Development} />

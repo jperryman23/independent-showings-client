@@ -8,7 +8,14 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 
-import {BrowserRouter as Router} from 'react-router-dom';
+// import Splash from './components/Splash';
+
+
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom'
 
 const store = createStore(
     rootReducer,
