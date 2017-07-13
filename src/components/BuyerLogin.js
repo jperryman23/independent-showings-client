@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
 
-import '../App.css'
+import '../App.css';
+
+import Header from './Header';
 
 export default class BuyerLogin extends Component {
     render(){
         return(
-
+            <div className="App">
+                <Header />
             <div className="container">
                 <h1>Buyer Login</h1>
                 <div className="contentBox">
@@ -32,6 +35,7 @@ export default class BuyerLogin extends Component {
 
 
             </div>
+        </div>
         )
     }
 }

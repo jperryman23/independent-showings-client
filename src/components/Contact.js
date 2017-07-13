@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../App.css'
+import Header from './Header';
 
 import { fetchContacts } from '../actions';
 
@@ -11,9 +12,11 @@ class Contact extends Component {
     this.props.fetchContacts();
     }
     render(){
-        return(
+return (
+    <div className="App">
+        <Header/>
             <div className="container">
-                <h1>Contact</h1>
+                <h1>Contact Page</h1>
 
 
             <div className="container">
@@ -22,11 +25,10 @@ class Contact extends Component {
                 <div>
                 <fetchContacts contact={this.props.contact} />
                 </div>
-
-
             </div>
 
             </div>
+        </div>
 
         )
     }

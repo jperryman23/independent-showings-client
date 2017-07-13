@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 
 import {
-  // BrowserRouter as Router,
+  BrowserRouter as Router,
   Route,
-  Link
 } from 'react-router-dom'
 
 import Splash from './components/Splash';
@@ -23,35 +21,18 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-
-            <div>
-                <h1>
-                    <img src={logo} className="App-logo" alt="logo" />
-                    Independent Showings <small> | making it easy </small>
-                </h1>
-            </div>
 
 
-            <div className="large ui inverted blue animated fade button" tabIndex="0">
-                <div className="visible content">New User</div>
-                <div className="hidden content"> Sign Up </div>
-            </div>
+            <Router>
+
+            {/* <Provider store={store}> */}
+                <Route exact path="/" component={Splash} />
+            {/* </Provider> */}
+            </Router>
 
 
-        </div>
-
-        <div className="ui six item menu">
-            <Link className="item" to="/Home">Home</Link>
-            <Link className="item" to="/About">About</Link>
-            <Link className="item" to="/BuyerLogin">Buyer Login </Link>
-            <Link className="item" to="/AgentLogin">Agent Login</Link>
-            <Link className="item"  to="/Development">Development</Link>
-            <Link className="item"  to="/Contact">Contact</Link>
-        </div>
 
 
-        <Route exact path="/" component={Splash} />
         <Route exact path="/Home" component={Home} />
         <Route exact path="/About" component={About} />
         <Route exact path="/BuyerLogin" component={BuyerLogin} />

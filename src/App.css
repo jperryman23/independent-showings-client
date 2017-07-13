@@ -1,5 +1,5 @@
 .App {
-    padding: 5px;
+    /*padding: 1px;*/
 }
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -24,11 +24,27 @@
 }
 
 
-.home-page.container {
+.splash {
     background-image: url("/../../images/downtown.jpg");
     background-size: cover;
-    height: 700px;
-    width: 100%;
+    height: 820px;
+}
+
+.splash-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.splash-header {
+
+}
+
+.splash-body {
+    align-items: center;
+}
+
+.splash-footer {
+
 }
 
 .contentBox {
