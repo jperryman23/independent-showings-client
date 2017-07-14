@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import '../App.css';
 
 import Header from './Header';
+import Footer from './Footer';
 
 export default class BuyerLogin extends Component {
     render(){
@@ -35,6 +36,7 @@ export default class BuyerLogin extends Component {
 
 
             </div>
+            <Footer />
         </div>
         )
     }

@@ -10,6 +10,7 @@ import { Provider } from 'react-redux';
 
 
 
+
 import {
   BrowserRouter as Router,
   // Route,
@@ -25,12 +26,17 @@ const store = createStore(
 
 ReactDOM.render(
 
+
     <Router>
 
     <Provider store={store}>
         <App />
+
     </Provider>
+
+
     </Router>
+
 
     ,
 

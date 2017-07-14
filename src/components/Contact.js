@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import '../App.css'
 import Header from './Header';
+import Footer from './Footer';
 
 import { fetchContacts } from '../actions';
 
@@ -28,6 +29,7 @@ return (
             </div>
 
             </div>
+            <Footer />
         </div>
 
         )

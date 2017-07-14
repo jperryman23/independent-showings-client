@@ -1,21 +1,33 @@
-.App {
-    /*padding: 1px;*/
+
+html, body {
+    height: 100%;
 }
+body {
+    background-image: url("/../../images/downtown.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+
+    flex: 1 0 auto;
+    /*height: 100%;*/
+}
+
+.App-logo-header {
+  animation: App-logo-spin infinite 20s linear;
+  height: 35px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 30px;
+  height: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
 }
-
-.App-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #222;
-  height: 80px;
-  padding: 20px;
-  color: white;
-}
-
 
 
 @keyframes App-logo-spin {
@@ -24,26 +36,78 @@
 }
 
 
-.splash {
-    background-image: url("/../../images/downtown.jpg");
-    background-size: cover;
-    height: 820px;
-}
-
 .splash-container{
     display: flex;
     flex-direction: column;
 }
 
 .splash-header {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    opacity: .80;
+    color: white;
+    height: 100px;
+}
+
+.splash-title {
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+    align-items: center;
+    flex-wrap: nowrap;
+    /*margin-right: 300px;*/
+    font-size: 35px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.ui.inverted.button {
+    margin-right: 10px;
+    box-shadow: 0 0 0 2px #FFF inset!important;
+    background: rgb(1, 1, 1);
+    opacity: .80;
+    width: 150px;
+    color: #FFF;
+    text-shadow: none!important;
 
 }
 
 .splash-body {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
     align-items: center;
+    background-color: black;
+    opacity: .70;
+    color: white;
+
 }
 
+
+.splash-state {
+    font-size: 50px;
+    font-weight: bold;
+
+}
 .splash-footer {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: black;
+    opacity: .80;
+    color: white;
+    position:absolute;
+    bottom:0;
+    height: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
 
 }
 

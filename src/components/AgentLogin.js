@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import Header from './Header';
+import Footer from './Footer';
 
 // import {
 //   BrowserRouter as Router,
@@ -42,6 +43,7 @@ export default class AgentLogin extends Component {
                         </form>
                     </div>
                 </div>
+            <Footer />
             </div>
 
         )

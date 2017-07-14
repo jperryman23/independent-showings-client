@@ -7,14 +7,14 @@ import {
   Route,
 } from 'react-router-dom'
 
-import Splash from './components/Splash';
 import Home from './components/Home';
+// import Header from '.components/Header';
+// import Footer from '.components/Footer';
 import About from './components/About';
 import BuyerLogin from './components/BuyerLogin';
 import AgentLogin from './components/AgentLogin';
 import Development from './components/Development';
 import Contact from './components/Contact';
-
 
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
             <Router>
 
             {/* <Provider store={store}> */}
-                <Route exact path="/" component={Splash} />
+                <Route exact path="/Home" component={Home} />
             {/* </Provider> */}
             </Router>
 
