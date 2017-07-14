@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import '../App.css'
 import Header from './Header';
 import Footer from './Footer';
+import ContactList from './ContactListComponent'
 
 import { fetchContacts } from '../actions';
 
@@ -13,6 +14,7 @@ class Contact extends Component {
     this.props.fetchContacts();
     }
     render(){
+        console.log('this.props', this.props);
 return (
     <div className="App">
         <Header/>
@@ -24,7 +26,10 @@ return (
                 <h3>Contact List</h3>
 
                 <div>
-                <fetchContacts contact={this.props.contact} />
+                    <ContactList contacts={this.props.contactList} />
+                {/* {this.props.contactList.map(contact => {
+                    return  <div>{contact.firstname} {contact._id} </div>
+                })} */}
                 </div>
             </div>
 
@@ -40,6 +45,11 @@ Contact.propTypes ={
     contactList: PropTypes.array.isRequired,
     fetchContacts: PropTypes.func.isRequired
 }
+
+Contact.defaultProps = {
+    contactList: []
+}
+
 function mapStateToProps(state){
     return{
         contactList: state.contactList

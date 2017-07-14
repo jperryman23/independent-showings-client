@@ -1,9 +1,10 @@
 export const CONTACT_FETCHED = 'CONTACT_FETCHED';
 
-export function contactFetched(contact){
+export function contactFetched(contactList){
+    // console.log(contacts);
     return {
     type: CONTACT_FETCHED,
-    contact
+    contactList
     }
 }
 
@@ -20,8 +21,11 @@ function handleResponse(response){
 
 export function fetchContacts(id) {
     return dispatch => {
-        fetch('http://localhost:8080/api/contacts/');
-        // .then(res => res.json())
-        // .then(data => dispatch(contactFetched(data.contact)))
+        fetch('http://localhost:8080/api/contacts/')
+        .then(res => res.json())
+        .then(data => {
+            // console.log(data);
+            dispatch(contactFetched(data.contacts))
+        })
     }
 }
