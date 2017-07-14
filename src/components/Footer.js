@@ -16,10 +16,12 @@ export default class Footer extends Component {
 
 
                 <div className="splash-footer">
-                    <div><img src={logo} className="App-logo" alt="logo" /></div>
-                    <div> This is my footer </div>
-                    <div> 720.530.1459 </div>
+
+                    <div> &copy; Copyright 2017  Independent Showings, LLC </div>
                     <div> Denver, Colorado </div>
+                    <div> 720-530-1459</div>
+                    <div> <img src={logo} className="App-logo" alt="logo" /> </div>
+
                 </div>
 
 
