@@ -1,15 +1,16 @@
 import React, {Component} from 'react';
 import logo from './favicon.ico';
 import '../App.css'
-import { Modal } from 'semantic-ui-react'
+// import {Modal, Menu, Segment} from 'semantic-ui-react';
+
+
+import LogInModal from '../FormsModals/LogInModal';
 
 import {
     // BrowserRouter as Router,
     // Route,
     Link
 } from 'react-router-dom'
-
-
 
 // const ModalModalExample = () => (
 //   <Modal size="small" trigger={<Button>Login</Button>}>
@@ -26,11 +27,20 @@ import {
 // )
 
 
+
+
 export default class Header extends Component {
-    constructor(){
+    constructor() {
         super()
+        this.state = {
+            activeItem: 'active'
+        }
+                const onClick = (e, { name }) => this.setState({ activeItem: name })
     }
     render() {
+
+         const activeItem = this.state
+
         return (
 
             <div className="splash">
@@ -51,56 +61,7 @@ export default class Header extends Component {
 
                     <div>
 
-
-                          <Modal size="small" trigger={
-                              <div className="large ui inverted blue animated fade button" tabIndex="0">
-                                  <div className="visible content">
-                                      Login
-                                  </div>
-                                  <div className="hidden content">
-                                      Buyer/Agent
-                                  </div>
-                              </div>}>
-
-                            <Modal.Content>
-                                <form className="ui form">
-                                     <h3>Please Login</h3>
-                                    <div className="six wide field">
-                                        <label>Agent ID</label>
-                                        <input type="text" name="AgentID" placeholder="ID Number" />
-                                    </div>
-
-                                    <div className="six wide field">
-                                            <label>Password</label>
-                                            <input type="text" name="password" placeholder="Enter Password" />
-                                    </div>
-
-                                    <div className="twenty wide field">
-                                            <div className="ui checkbox">
-                                                <input type="checkbox" tabIndex="0" className="hidden" />
-
-                                                <label>By clicking Sign up or Continue with, I agree to Independent Brokers
-                                                <a className="" href="/terms-conditions" target="_blank"> Terms and Conditions</a>.
-                                                </label>
-
-                                            </div>
-
-                                            </div>
-                                                <button className="ui button" type="submit">Submit</button>
-                                            </form>
-
-                            </Modal.Content>
-                          </Modal>
-
-
-                        {/* <div className="large ui inverted blue animated fade button" tabIndex="0">
-                            <div className="visible content">
-                                Login
-                            </div>
-                            <div className="hidden content">
-                                Buyer/Agent
-                            </div>
-                        </div> */}
+                        <LogInModal/>
 
                         <div className="large ui inverted blue animated fade button" tabIndex="0">
                             <div className="visible content">Sign up
@@ -109,20 +70,44 @@ export default class Header extends Component {
                                 New User
                             </div>
                         </div>
+
                     </div>
 
                 </div>
 
-                <div className="ui pointing menu">
-                    <Link className="item" to="/Home">Home</Link>
-                    <Link className="item" to="/About">About - Network Properties</Link>
-                    <Link className="item" to="/BuyerLogin">Buyer Login
-                    </Link>
-                    <Link className="item" to="/AgentLogin">Agent Login</Link>
-                    <Link className="item" to="/Development">Development</Link>
-                    <Link className="item" to="/Contact">Contact</Link>
-                </div>
 
+
+
+                <div className="ui secondary pointing inverted menu">
+                    <a href='/Home' className="item active" name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>
+                      Home
+                    </a>
+
+                    <a href='/BuyerLogin' className="item" name='buyers' active={activeItem === 'buyers'} onClick={this.handleItemClick}>
+                      Buyers
+                    </a>
+                    <a href='/AgentLogin' className="item" name='agents' active={activeItem === 'agents'} onClick={this.handleItemClick}>
+                      Agents
+                    </a>
+                    <a href='/Development' className="item" name='development' active={activeItem === 'development'} onClick={this.handleItemClick}>
+                      Developement
+                    </a>
+                    <a href="/Contact" className="item" name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}>
+                      Contact
+                    </a>
+                    <a href='/About' className="item item" name='about' active={activeItem === 'about'} onClick={this.handleItemClick}>
+                      About
+                    </a>
+
+                    <div className="right inverted menu">
+                        <div className=" active item">
+                            <div className="ui icon transparent input">
+                                <input type="text" placeholder="Search..." />
+                                <i className="search link icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
 

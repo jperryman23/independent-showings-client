@@ -25,7 +25,7 @@ body {
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 20px;
+  height: 15px;
   margin-left: 10px;
   margin-right: 20px;
 }
@@ -37,7 +37,7 @@ body {
 }
 
 
-.splash-container{
+.home-container{
     display: flex;
     flex-direction: column;
 }
@@ -46,31 +46,27 @@ body {
     /*border: 1px solid white;*/
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     background-color: black;
     opacity: .80;
     color: white;
-    height: 100px;
+    height: 90px;
 }
 
 .splash-title {
     display: flex;
     flex-direction: row;
-    /*justify-content: space-between;*/
     align-items: center;
     flex-wrap: nowrap;
-    /*margin-right: 300px;*/
     font-size: 35px;
     font-weight: bold;
     margin-left: 10px;
 }
 
 .ui.inverted.button {
-    margin-right: 10px;
-    /*box-shadow: 0 0 0 2px #FFF inset!important;*/
-    /*background: rgb(1, 1, 1);*/
+    margin-right: 15px;
     opacity: .80;
     width: 150px;
     color: #FFF;
@@ -79,20 +75,23 @@ body {
 
 }
 
-.splash-body {
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /*justify-content: space-around;*/
+
+/*HOMEPAGE*/
+.home-body {
+    border: .5px solid white;
     background-color: black;
     opacity: .70;
     color: white;
-    padding: 2em;
-    margin: 3em;
-    height: 650px;
-
+    padding: 1em;
+    margin: 2em;
+    height: 575px;
 }
+
+.taglines {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
 
 
 .splash-state {
@@ -100,6 +99,125 @@ body {
     font-weight: bold;
 
 }
+
+
+.contentBox {
+    margin-left: 5em;
+    /*border: 1px solid black;*/
+
+}
+
+
+/*ABOUT PAGE CSS*/
+
+.about-page-body {
+    border: 1px solid white;
+    background-color: black;
+    opacity: .70;
+    color: white;
+    padding: 1em;
+    margin: 2em;
+    height: 575px;
+
+}
+
+.about-page-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+.about-header{
+    margin-bottom: 2rem;
+    font-family: bold;
+    color: white;
+    background-color: black;
+    padding: 5px;
+}
+
+
+
+/*DEVELOPMENT PAGE*/
+.development-body {
+    border: 1px solid white;
+    background-color: black;
+    opacity: .70;
+    color: white;
+    padding: 1em;
+    margin: 2em;
+    height: 575px;
+}
+
+.development-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*CONTACT PAGE*/
+
+.contact-body {
+    border: 1px solid white;
+    background-color: black;
+    opacity: .70;
+    color: white;
+    padding: 1em;
+    margin: 2em;
+    height: 575px;
+}
+
+
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+.ui.modal>.icon:first-child+*, .ui.modal>:first-child:not(.icon) {
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+    background-color: rgb(228, 228, 228);
+    border: 5px solid rgb(9, 210, 230);
+    box-shadow: 10px -10px teal;
+}
+
+
+
+form.ui.form {
+    /*border: 1px solid black;*/
+    color: black;
+    font-stretch: expanded;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.login-form-header{
+    font-size: 25px;
+    font-weight: bold;
+    text-decoration-color: black;
+    width: 100%;
+
+
+}
+
+button.ui.button {
+    color:white;
+    font-weight: bold;
+    width: 125px;
+    background-color: teal;
+    opacity: .85;
+}
+
+/*FOOTER */
+
+
 .splash-footer {
     /*border: 1px solid white;*/
     display: flex;
@@ -110,18 +228,10 @@ body {
     color: white;
     position:absolute;
     bottom:0;
-    height: 50px;
+    height: 45px;
     width: 100%;
     align-items: center;
     justify-content: space-around;
-    font-size: 15px;
+    font-size: 12px;
     font-family: sans-serif;
-    font-weight: bold;
-
-}
-
-.contentBox {
-    margin-left: 5em;
-    /*border: 1px solid black;*/
-
 }

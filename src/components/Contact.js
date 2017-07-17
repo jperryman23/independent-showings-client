@@ -18,19 +18,20 @@ class Contact extends Component {
 return (
     <div className="App">
         <Header/>
-            <div className="container">
+            <div className="contact-body">
                 <h1>Contact Page</h1>
 
 
-            <div className="container">
-                <h3>Contact List</h3>
+            <div className="contacts-list">
+                <h3>Contact List:</h3>
 
-                <div>
+
+
                     <ContactList contacts={this.props.contactList} />
                 {/* {this.props.contactList.map(contact => {
                     return  <div>{contact.firstname} {contact._id} </div>
                 })} */}
-                </div>
+
             </div>
 
             </div>

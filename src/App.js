@@ -10,11 +10,11 @@ import {
 import Home from './components/Home';
 // import Header from '.components/Header';
 // import Footer from '.components/Footer';
-import About from './components/About';
 import BuyerLogin from './components/BuyerLogin';
 import AgentLogin from './components/AgentLogin';
 import Development from './components/Development';
 import Contact from './components/Contact';
+import About from './components/About';
 
 
 class App extends Component {
@@ -26,7 +26,7 @@ class App extends Component {
             <Router>
 
             {/* <Provider store={store}> */}
-                <Route exact path="/Home" component={Home} />
+                <Route exact path="/" component={App} />
             {/* </Provider> */}
             </Router>
 
@@ -34,11 +34,12 @@ class App extends Component {
 
 
         <Route exact path="/Home" component={Home} />
-        <Route exact path="/About" component={About} />
+
         <Route exact path="/BuyerLogin" component={BuyerLogin} />
         <Route exact path="/AgentLogin" component={AgentLogin} />
         <Route exact path="/Development" component={Development} />
         <Route exact path="/Contact" component={Contact} />
+        <Route exact path="/About" component={About} />
 
 
       </div>
