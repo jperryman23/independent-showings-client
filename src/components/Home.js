@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import '../App.css'
 import '../Homepage.css'
 
-import Header from './Header';
-import Footer from './Footer';
+// import Header from './Header';
+// import Footer from './Footer';
 
 import home1 from '../images/home1.jpg'
 // import home2 from '../images/home2.jpg'
@@ -43,7 +43,7 @@ export default class Home extends Component {
 
         return(
         <div className="App">
-        <Header />
+
 
 
             <div className="home-body">
@@ -59,7 +59,7 @@ export default class Home extends Component {
 
             </div>
 
-        <Footer />
+
         </div>
         )
     }

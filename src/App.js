@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import createHistory from 'history/createBrowserHistory';
 
 import {
   BrowserRouter as Router,
@@ -8,8 +9,8 @@ import {
 } from 'react-router-dom'
 
 import Home from './components/Home';
-// import Header from '.components/Header';
-// import Footer from '.components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import BuyerLogin from './components/BuyerLogin';
 import AgentLogin from './components/AgentLogin';
 import Development from './components/Development';
@@ -18,14 +19,21 @@ import About from './components/About';
 
 import ViewAgent from './components/sub-components/ViewAgent';
 
+const history = createHistory()
+
+history.listen((location) =>{
+    console.log(location);
+})
 
 class App extends Component {
   render() {
     return (
       <div className="App">
+          <Header />
 
 
-            <Router>
+
+            <Router history ={history}>
                 <div>
             {/* <Provider store={store}> */}
                 <Route exact path='/ViewAgent' component={ViewAgent} />
@@ -42,7 +50,7 @@ class App extends Component {
 
 
 
-
+<Footer />
 
 
 

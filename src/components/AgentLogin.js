@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-import Header from './Header';
-import Footer from './Footer';
+// import Header from './Header';
+// import Footer from './Footer';
 
 // import {
 //   BrowserRouter as Router,
@@ -13,7 +13,7 @@ export default class AgentLogin extends Component {
     render(){
         return(
         <div className="App">
-            <Header />
+
             <div className="development-body">
 
                 <h2>Agents DUMMY FRONT Page</h2>
@@ -24,7 +24,7 @@ export default class AgentLogin extends Component {
             </div>
 
             </div>
-            <Footer />
+
             </div>
 
         )

@@ -2,13 +2,15 @@ import React, {Component} from 'react';
 import logo from './favicon.ico';
 import '../App.css'
 // import {Modal, Menu, Segment} from 'semantic-ui-react';
+// import createHistory from 'history/createBrowserHistory';
+// import {history} from 'react-router';
 
 import LogInModal from '../FormsModals/LogInModal';
 
 import {
     // BrowserRouter as Router,
     // Route,
-    // Link
+    Link
 } from 'react-router-dom'
 
 // const ModalModalExample = () => (
@@ -29,16 +31,30 @@ export default class Header extends Component {
     constructor() {
         super()
         this.state = {
-            activeItem: 'active'
+            activeItem: window.location.pathname.substr(1)
         }
+        // const history = createHistory()
+        // history.listen(this.handleLocationChange)
+        this.handleItemClick = this.handleItemClick.bind(this)
     }
 
-    // handleItemClick(e, {name}) {
+    // handleLocationChange(location) {
+    //     console.log(location);
+    // }
+
+
+    handleItemClick(e, name) {
         // console.log(e);
         // debugger
         // e.preventDefault()
-        // this.setState({activeItem: name})
-    // }
+        this.setState({activeItem: name})
+    }
+
+    getNavItemClasses(name) {
+        return `item ${this.state.activeItem === name
+            ? 'active'
+            : ''}`
+    }
 
     render() {
 
@@ -78,26 +94,31 @@ export default class Header extends Component {
 
                 </div>
 
-                <div className="ui secondary pointing inverted menu">
-                    <a href='/Home' className="item active" name='home'  onClick={this.handleItemClick}>
-                        Home
-                    </a>
 
-                    <a href='/BuyerLogin' className="item" name='buyers'  onClick={this.handleItemClick}>
+                <div className="ui secondary pointing inverted menu">
+                    <Link to='/Home' className={this.getNavItemClasses('Home')} onClick={(e) => this.handleItemClick(e, 'Home')} >
+                        Home
+                    </Link>
+
+                    <Link  to='/BuyerLogin' className={this.getNavItemClasses('BuyerLogin')} onClick={(e) => this.handleItemClick(e, 'BuyerLogin')} >
                         Buyers
-                    </a>
-                    <a href='/AgentLogin' className="item" name='agents'  onClick={this.handleItemClick}>
+                    </Link>
+
+                    <Link to='/AgentLogin' className={this.getNavItemClasses('AgentLogin')} onClick={(e) => this.handleItemClick(e, 'AgentLogin')}>
                         Agents
-                    </a>
-                    <a href='/Development' className="item" name='development' onClick={this.handleItemClick}>
+                    </Link>
+
+                    <Link to='/Development' className={this.getNavItemClasses('Development')} onClick={(e) => this.handleItemClick(e, 'Development')}>
                         Developement
-                    </a>
-                    <a href="/Contact" className="item" name='contact' onClick={this.handleItemClick}>
+                    </Link>
+
+                    <Link to="/Contact" className={this.getNavItemClasses('Contact')} onClick={(e) => this.handleItemClick(e, 'Contact')}>
                         Contact
-                    </a>
-                    <a href='/About' className="item item" name='about' onClick={this.handleItemClick}>
+                    </Link>
+
+                    <Link to='/About' className={this.getNavItemClasses('About')} onClick={(e) => this.handleItemClick(e, 'About')}>
                         About
-                    </a>
+                    </Link>
 
                     <div className="right inverted menu">
                         <div className=" active item">

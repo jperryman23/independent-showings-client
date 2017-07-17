@@ -24,8 +24,9 @@ export function fetchContacts(id) {
         fetch('http://localhost:8080/api/contacts/')
         .then(res => res.json())
         .then(data => {
-            // console.log(data);
-            dispatch(contactFetched(data.contacts))
+            console.log(data);
+            return dispatch(contactFetched(data))
+
         })
     }
 }
