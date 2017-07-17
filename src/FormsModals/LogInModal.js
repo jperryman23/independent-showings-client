@@ -3,6 +3,7 @@ import { Modal } from 'semantic-ui-react';
 
 import '../App.css';
 
+
 const button1 = (
 <div className="large ui inverted blue animated fade button" tabIndex="0">
     <div className="visible content">
@@ -14,8 +15,22 @@ const button1 = (
 </div>
 )
 
+// $('loginbutton').click(() => {
+//     window.location = '/ViewAgent';
+// })
+
+
+
 
 export default class LogInModal extends Component {
+    constructor(){
+        super()
+        this.state = {username: ''}
+    }
+    handleUserName (event){
+        this.setState({username:event.target.value})
+        console.log('un is: ', this.state.username);
+    }
     render(){
         return(
 
@@ -27,7 +42,7 @@ export default class LogInModal extends Component {
                            <h3 className="login-form-header">Please Login</h3>
                           <div className="ten wide field">
                               <label>Agent ID</label>
-                              <input type="text" name="AgentID" placeholder="ID Number" />
+                              <input type="text" name="AgentID" placeholder="ID Number" onChange={this.handleUserName} />
                           </div>
 
                           <div className="ten wide field">
@@ -46,7 +61,7 @@ export default class LogInModal extends Component {
                                   </div>
 
                                   </div>
-                                      <button className="ui button" type="submit" id="loginbutton">Login</button>
+                                     <button className="ui button" type="submit" id="loginbutton"> <a href='/ViewAgent'>Login</a></button>
                                   </form>
 
 

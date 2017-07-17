@@ -6,7 +6,7 @@ import Header from './Header';
 import Footer from './Footer';
 
 export default class BuyerLogin extends Component {
-    render(){
+    render() {
         return(
             <div className="App">
                 <Header />

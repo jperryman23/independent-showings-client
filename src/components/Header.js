@@ -3,13 +3,12 @@ import logo from './favicon.ico';
 import '../App.css'
 // import {Modal, Menu, Segment} from 'semantic-ui-react';
 
-
 import LogInModal from '../FormsModals/LogInModal';
 
 import {
     // BrowserRouter as Router,
     // Route,
-    Link
+    // Link
 } from 'react-router-dom'
 
 // const ModalModalExample = () => (
@@ -26,20 +25,24 @@ import {
 //   </Modal>
 // )
 
-
-
-
 export default class Header extends Component {
     constructor() {
         super()
         this.state = {
             activeItem: 'active'
         }
-                const onClick = (e, { name }) => this.setState({ activeItem: name })
     }
+
+    // handleItemClick(e, {name}) {
+        // console.log(e);
+        // debugger
+        // e.preventDefault()
+        // this.setState({activeItem: name})
+    // }
+
     render() {
 
-         const activeItem = this.state
+        // const activeItem = this.state
 
         return (
 
@@ -75,34 +78,31 @@ export default class Header extends Component {
 
                 </div>
 
-
-
-
                 <div className="ui secondary pointing inverted menu">
-                    <a href='/Home' className="item active" name='home' active={activeItem === 'home'} onClick={this.handleItemClick}>
-                      Home
+                    <a href='/Home' className="item active" name='home'  onClick={this.handleItemClick}>
+                        Home
                     </a>
 
-                    <a href='/BuyerLogin' className="item" name='buyers' active={activeItem === 'buyers'} onClick={this.handleItemClick}>
-                      Buyers
+                    <a href='/BuyerLogin' className="item" name='buyers'  onClick={this.handleItemClick}>
+                        Buyers
                     </a>
-                    <a href='/AgentLogin' className="item" name='agents' active={activeItem === 'agents'} onClick={this.handleItemClick}>
-                      Agents
+                    <a href='/AgentLogin' className="item" name='agents'  onClick={this.handleItemClick}>
+                        Agents
                     </a>
-                    <a href='/Development' className="item" name='development' active={activeItem === 'development'} onClick={this.handleItemClick}>
-                      Developement
+                    <a href='/Development' className="item" name='development' onClick={this.handleItemClick}>
+                        Developement
                     </a>
-                    <a href="/Contact" className="item" name='contact' active={activeItem === 'contact'} onClick={this.handleItemClick}>
-                      Contact
+                    <a href="/Contact" className="item" name='contact' onClick={this.handleItemClick}>
+                        Contact
                     </a>
-                    <a href='/About' className="item item" name='about' active={activeItem === 'about'} onClick={this.handleItemClick}>
-                      About
+                    <a href='/About' className="item item" name='about' onClick={this.handleItemClick}>
+                        About
                     </a>
 
                     <div className="right inverted menu">
                         <div className=" active item">
                             <div className="ui icon transparent input">
-                                <input type="text" placeholder="Search..." />
+                                <input type="text" placeholder="Search..."/>
                                 <i className="search link icon"></i>
                             </div>
                         </div>

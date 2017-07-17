@@ -8,15 +8,15 @@ export function contactFetched(contactList){
     }
 }
 
-function handleResponse(response){
-    if (response.ok){
-        return response.json();
-    } else {
-        let error = new Error(response.statusText);
-        error.response = response;
-        throw error;
-    }
-    }
+// function handleResponse(response){
+//     if (response.ok){
+//         return response.json();
+//     } else {
+//         let error = new Error(response.statusText);
+//         error.response = response;
+//         throw error;
+//     }
+//     }
 
 
 export function fetchContacts(id) {

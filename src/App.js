@@ -16,6 +16,8 @@ import Development from './components/Development';
 import Contact from './components/Contact';
 import About from './components/About';
 
+import ViewAgent from './components/sub-components/ViewAgent';
+
 
 class App extends Component {
   render() {
@@ -24,22 +26,24 @@ class App extends Component {
 
 
             <Router>
-
+                <div>
             {/* <Provider store={store}> */}
+                <Route exact path='/ViewAgent' component={ViewAgent} />
                 <Route exact path="/" component={App} />
+                <Route exact path="/Home" component={Home} />
+                <Route exact path="/BuyerLogin" component={BuyerLogin} />
+                <Route exact path="/AgentLogin" component={AgentLogin} />
+                <Route exact path="/Development" component={Development} />
+                <Route exact path="/Contact" component={Contact} />
+                <Route exact path="/About" component={About} />
+            </div>
             {/* </Provider> */}
             </Router>
 
 
 
 
-        <Route exact path="/Home" component={Home} />
 
-        <Route exact path="/BuyerLogin" component={BuyerLogin} />
-        <Route exact path="/AgentLogin" component={AgentLogin} />
-        <Route exact path="/Development" component={Development} />
-        <Route exact path="/Contact" component={Contact} />
-        <Route exact path="/About" component={About} />
 
 
       </div>

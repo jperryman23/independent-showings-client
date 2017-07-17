@@ -1,21 +1,16 @@
 import React, {Component} from 'react';
-import logo from './favicon.ico';
-import '../App.css'
+import logo from '../favicon.ico';
+import '../../App.css'
 // import {Modal, Menu, Segment} from 'semantic-ui-react';
 
 
 import {
     // BrowserRouter as Router,
     // Route,
-    Link
+    // Link
 } from 'react-router-dom'
 
-export default class AgentHeader extends Component {
-    constructor() {
-        super()
-        }
-
-    }
+class AgentHeader extends Component {
     render() {
 
 
@@ -32,7 +27,7 @@ export default class AgentHeader extends Component {
                         <div className="title-name">
                             Independent Showings |
                             <small>
-                                &nbsp; Making it Easy
+                                &nbsp; Agent View
                             </small>
                         </div>
                     </div>
@@ -73,3 +68,5 @@ export default class AgentHeader extends Component {
         )
     }
 }
+
+export default AgentHeader

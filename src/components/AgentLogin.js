@@ -16,7 +16,7 @@ export default class AgentLogin extends Component {
             <Header />
             <div className="development-body">
 
-                <h2>Agents Page</h2>
+                <h2>Agents DUMMY FRONT Page</h2>
 
             <div className="development-text">
 
