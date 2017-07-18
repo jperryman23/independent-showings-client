@@ -247,7 +247,7 @@ button.ui.button {
     flex-wrap: nowrap;
     background-color: black;
     opacity: .80;
-    color: white;
+    color: rgb(7, 233, 227);
     position:absolute;
     bottom:0;
     height: 45px;
