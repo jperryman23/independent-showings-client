@@ -48,7 +48,7 @@ class AgentHeader extends Component {
 
 
                 <div className="ui secondary pointing inverted menu">
-                    <a href='/Home' className="item active"> Home </a>
+                    <a href='/' className="item active"> Home </a>
 
                     <a href='/BuyerLogin' className="item"> My Listings </a>
                     <a href='/AgentLogin' className="item"> History View </a>

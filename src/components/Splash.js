@@ -3,7 +3,7 @@ import '../App.css'
 
 import App from '../App';
 
-import Home from './Home';
+import Home from './';
 
 import {
   BrowserRouter as Router,

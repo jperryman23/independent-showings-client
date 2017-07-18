@@ -29,18 +29,20 @@ class App extends Component {
             <div className="App">
 
                 <Router>
+
                     <div>
                         {/* <Provider store={store}> */}
-                            <Route exact path="/" component={App}/>
+                            <Route exact path="/" component={Home}/>
 
                     {/* </Provider> */}
                     </div>
+
                 </Router>
 
 
+                {/* <Route exact path="/" component={Home}/> */}
                 <Route exact path='/ViewAgent' component={ViewAgent}/>
                 <Route exact path='/ViewBuyer' component={ViewBuyer}/>
-                <Route exact path="/Home" component={Home}/>
                 <Route exact path="/BuyerLogin" component={BuyerLogin}/>
                 <Route exact path="/AgentLogin" component={AgentLogin}/>
                 <Route exact path="/Development" component={Development}/>

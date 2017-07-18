@@ -39,15 +39,13 @@ export default class ViewBuyer extends Component {
 
                     <div className="ShowingLog">
 
-                    <div className="ui center aligned container">
-                        <div> </div>
-                        {/* <h2 className="Log">Showing History Log</h2> */}
-                        <p className="historyLog">
-                            <div></div>
-                            <h2 className="Log">Showing History Log</h2>
-                            Log</p>
+                    <div className="ui center aligned container historydisplay">
+                        <h2 className="propertylogtitle"> Showing History Log</h2>
+                            <p>Log</p>
                     </div>
                 </div>
+
+
             </div>
 
          <LoggedinFooter />

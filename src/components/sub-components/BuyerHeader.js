@@ -45,7 +45,7 @@ class BuyerHeader extends Component {
                 </div>
 
                 <div className="ui secondary pointing inverted menu">
-                    <a href='/Home' className="item active">
+                    <a href='/' className="item active">
                         Home
                     </a>
                     <a href='' className="item">

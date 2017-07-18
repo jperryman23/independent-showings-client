@@ -64,13 +64,8 @@ export default class LogInModal extends Component {
                                      <button className="ui button" type="submit" id="loginbutton"> <a href='/ViewBuyer'>Login</a></button>
                                   </form>
 
-
-
                   </Modal.Content>
                 </Modal>
-
-
-
 
         )
     }

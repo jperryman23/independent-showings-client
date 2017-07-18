@@ -17,19 +17,26 @@ class Contact extends Component {
         console.log('this.props', this.props);
         return (
             <div className="App">
-                          <Header />
+                <Header/>
                 <div className="contact-body">
                     <h1>Contact Page</h1>
 
+                    <div className="myContactInfo">
+                        <h1>
+                            Jules R. Perryman</h1>
+                        <h3>720.530.1459</h3>
+                        <h3>Galvainze G[46]</h3>
+                        <a href="www.julesperryman.com">WEBSITE</a>
+                    </div>
+
                     <div className="contacts-list">
                         <h3>Contact List:</h3>
-
-                <ContactList contacts={this.props.contactList}/>
+                        <ContactList contacts={this.props.contactList}/>
 
                     </div>
 
                 </div>
-                <Footer />
+                <Footer/>
             </div>
 
         )
