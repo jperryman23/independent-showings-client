@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import '../App.css'
 
-// import Header from './Header';
-// import Footer from './Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 export default class About extends Component {
     render() {
         return (
             <div className="App">
-
+                          <Header />
 
                 <div className="about-page-body">
                     <h1>About Independent Showings </h1>
@@ -54,6 +54,7 @@ export default class About extends Component {
                 </div>
 
                 </div>
+                <Footer />
 
             </div>
         )

@@ -8,6 +8,7 @@ export function contactFetched(contactList){
     }
 }
 
+
 // function handleResponse(response){
 //     if (response.ok){
 //         return response.json();
@@ -18,6 +19,9 @@ export function contactFetched(contactList){
 //     }
 //     }
 
+
+
+// FETCH CONTACTS
 
 export function fetchContacts(id) {
     return dispatch => {
@@ -30,3 +34,17 @@ export function fetchContacts(id) {
         })
     }
 }
+
+
+// FETCH PROPERTIES
+// export function fetchProperties(id) {
+//     return dispatch => {
+//         fetch('http://localhost:8080/api/contacts/')
+//         .then(res => res.json())
+//         .then(data => {
+//             console.log(data);
+//             return dispatch(propertyFetched(data))
+//
+//         })
+//     }
+// }

@@ -16,9 +16,9 @@ class AgentHeader extends Component {
 
         return (
 
-            <div className="splash">
+            <div className="agent-splash">
 
-                <div className="splash-header">
+                <div className="agent-header">
 
                     <div className="splash-title">
                         <div>

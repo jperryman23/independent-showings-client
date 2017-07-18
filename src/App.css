@@ -65,6 +65,19 @@ body {
     margin-left: 10px;
 }
 
+.agent-header{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    opacity: .80;
+    color: black;
+    height: 90px;
+
+}
+
 .ui.inverted.button {
     margin-right: 15px;
     opacity: .80;

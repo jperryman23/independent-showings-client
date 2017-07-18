@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import '../App.css'
 import '../Homepage.css'
 
-// import Header from './Header';
-// import Footer from './Footer';
+import Header from './Header';
+import Footer from './Footer';
 
-import home1 from '../images/home1.jpg'
+// import home1 from '../images/home1.jpg'
 // import home2 from '../images/home2.jpg'
 // import home3 from '../images/home3.jpg'
 // import home4 from '../images/home4.jpg'
@@ -25,7 +25,7 @@ export default class Home extends Component {
         super()
         this.state = {
             title: "Independent Showings, Making it easy",
-            image: home1
+            // image: home1
         }
     }
     render(){
@@ -43,6 +43,7 @@ export default class Home extends Component {
 
         return(
         <div className="App">
+                      <Header />
 
 
 
@@ -58,6 +59,8 @@ export default class Home extends Component {
 
 
             </div>
+
+            <Footer />
 
 
         </div>

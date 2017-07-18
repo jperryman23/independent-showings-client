@@ -10,7 +10,7 @@ import LogInModal from '../FormsModals/LogInModal';
 import {
     // BrowserRouter as Router,
     // Route,
-    Link
+    // Link
 } from 'react-router-dom'
 
 // const ModalModalExample = () => (
@@ -35,7 +35,7 @@ export default class Header extends Component {
         }
         // const history = createHistory()
         // history.listen(this.handleLocationChange)
-        this.handleItemClick = this.handleItemClick.bind(this)
+        // this.handleItemClick = this.handleItemClick.bind(this)
     }
 
     // handleLocationChange(location) {
@@ -43,18 +43,18 @@ export default class Header extends Component {
     // }
 
 
-    handleItemClick(e, name) {
-        // console.log(e);
-        // debugger
-        // e.preventDefault()
-        this.setState({activeItem: name})
-    }
-
-    getNavItemClasses(name) {
-        return `item ${this.state.activeItem === name
-            ? 'active'
-            : ''}`
-    }
+    // handleItemClick(e, name) {
+    //     // console.log(e);
+    //     // debugger
+    //     // e.preventDefault()
+    //     this.setState({activeItem: name})
+    // }
+    //
+    // getNavItemClasses(name) {
+    //     return `item ${this.state.activeItem === name
+    //         ? 'active'
+    //         : ''}`
+    // }
 
     render() {
 
@@ -95,7 +95,42 @@ export default class Header extends Component {
                 </div>
 
 
+
                 <div className="ui secondary pointing inverted menu">
+                    <a href='/Home' className="item" > Home
+                    </a>
+
+                    <a href='/BuyerLogin' className="item"  >
+                        Buyers
+                    </a>
+
+                    <a href='/AgentLogin' className="item" >
+                        Agents
+                    </a>
+
+                    <a href='/Development' className="item" >
+                        Developement
+                    </a>
+
+                    <a href="/Contact" className="item" >
+                        Contact
+                    </a>
+
+                    <a href='/About' className="item" >
+                        About
+                    </a>
+
+                    <div className="right inverted menu">
+                        <div className=" active item">
+                            <div className="ui icon transparent input">
+                                <input type="text" placeholder="Search..."/>
+                                <i className="search link icon"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {/* <div className="ui secondary pointing inverted menu">
                     <Link to='/Home' className={this.getNavItemClasses('Home')} onClick={(e) => this.handleItemClick(e, 'Home')} >
                         Home
                     </Link>
@@ -128,7 +163,7 @@ export default class Header extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
             </div>
 
