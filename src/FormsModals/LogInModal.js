@@ -25,12 +25,12 @@ const button1 = (
 export default class LogInModal extends Component {
     constructor(){
         super()
-        this.state = {username: ''}
+        // this.state = {username: ''}
     }
-    handleUserName (event){
-        this.setState({username:event.target.value})
-        console.log('un is: ', this.state.username);
-    }
+    // handleUserName (event){
+    //     this.setState({username:event.target.value})
+    //     console.log('un is: ', this.state.username);
+    // }
     render(){
         return(
 
@@ -41,7 +41,7 @@ export default class LogInModal extends Component {
                        <form className="ui form">
                            <h3 className="login-form-header">Please Login</h3>
                           <div className="ten wide field">
-                              <label>Agent ID</label>
+                              <label>Buyer ID || Agent ID</label>
                               <input type="text" name="AgentID" placeholder="ID Number" onChange={this.handleUserName} />
                           </div>
 
@@ -61,7 +61,7 @@ export default class LogInModal extends Component {
                                   </div>
 
                                   </div>
-                                     <button className="ui button" type="submit" id="loginbutton"> <a href='/ViewAgent'>Login</a></button>
+                                     <button className="ui button" type="submit" id="loginbutton"> <a href='/ViewBuyer'>Login</a></button>
                                   </form>
 
 

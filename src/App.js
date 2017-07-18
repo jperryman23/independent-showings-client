@@ -15,6 +15,7 @@ import Contact from './components/Contact';
 import About from './components/About';
 
 import ViewAgent from './components/sub-components/ViewAgent';
+import ViewBuyer from './components/sub-components/ViewBuyer';
 
 const history = createHistory()
 
@@ -38,7 +39,7 @@ class App extends Component {
 
 
                 <Route exact path='/ViewAgent' component={ViewAgent}/>
-
+                <Route exact path='/ViewBuyer' component={ViewBuyer}/>
                 <Route exact path="/Home" component={Home}/>
                 <Route exact path="/BuyerLogin" component={BuyerLogin}/>
                 <Route exact path="/AgentLogin" component={AgentLogin}/>

@@ -1,0 +1,67 @@
+
+
+.ui.black.button {
+    margin-right: 2em;
+    width: 150px;
+    border: 2px solid rgb(32, 127, 254);
+
+}
+
+.ui.secondary.inverted.menu, .ui.vertical.secondary.menu .item>.menu .item {
+    background-color: rgba(0,0,0,.95);
+    /* align-items: center; */
+}
+
+.ui.secondary.pointing.menu{
+    height: 18px;
+    align-items: center;
+}
+
+.ui.menu {
+    display: flex;
+    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
+    background-color: darkgray;
+    color: black;
+    font-weight: 400;
+    margin: 0;
+}
+
+.viewBuyerApp{
+    background-image: url(/../../images/livingroom.jpg);
+    background-size: cover;
+    height: 800px;
+    max-height: 800px;
+}
+
+.buyer-content{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /*align-content: space-around;*/
+    color: white;
+    /*border: 1px solid black;*/
+    /*height: 550px;*/
+    /*max-height: 550px;*/
+
+}
+
+
+.loggedin-footer {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: white;
+    opacity: .80;
+    color: black;
+    position:absolute;
+    bottom:0;
+    height: 45px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 12px;
+    font-family: sans-serif;
+    font-weight: bold;
+}

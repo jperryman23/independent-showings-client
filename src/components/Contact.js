@@ -24,9 +24,7 @@ class Contact extends Component {
                     <div className="contacts-list">
                         <h3>Contact List:</h3>
 
-                        <ContactList contacts={this.props.contactList}/> {/* {this.props.contactList.map(contact => {
-                    return  <div>{contact.firstname} {contact._id} </div>
-                })} */}
+                <ContactList contacts={this.props.contactList}/>
 
                     </div>
 

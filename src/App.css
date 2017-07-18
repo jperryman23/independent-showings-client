@@ -72,7 +72,7 @@ body {
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    opacity: .80;
+    opacity: .90;
     color: black;
     height: 90px;
 
@@ -248,3 +248,10 @@ button.ui.button {
     font-size: 12px;
     font-family: sans-serif;
 }
+
+
+/*AGENT VIEW*/
+/*
+.viewBuyerApp{
+    background-color: black;
+}*/

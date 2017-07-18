@@ -97,7 +97,7 @@ export default class Header extends Component {
 
 
                 <div className="ui secondary pointing inverted menu">
-                    <a href='/Home' className="item" > Home
+                    <a href='/Home' className="item active" > Home
                     </a>
 
                     <a href='/BuyerLogin' className="item"  >
