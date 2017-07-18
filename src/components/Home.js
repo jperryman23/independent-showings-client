@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import '../App.css'
 import '../Homepage.css'
 
-import Header from './Header';
-import Footer from './Footer';
+// import Header from './Header';
+// import Footer from './Footer';
 
 // import home1 from '../images/home1.jpg'
 // import home2 from '../images/home2.jpg'
@@ -43,16 +43,16 @@ export default class Home extends Component {
 
         return(
         <div className="App">
-                      <Header />
+
 
 
 
             <div className="home-body">
-                <h1>Home Page</h1>
+                <h2 className="pageHeaderTitle">Home Page</h2>
 
 
                 <div className="taglines">
-                    <h2> {this.state.title}</h2>
+                    <h2 className="scrollText"> {this.state.title}</h2>
 
                 </div>
                 {/* <img className="ui small fluid image" src={this.state.image} />  */}
@@ -60,7 +60,7 @@ export default class Home extends Component {
 
             </div>
 
-            <Footer />
+
 
 
         </div>

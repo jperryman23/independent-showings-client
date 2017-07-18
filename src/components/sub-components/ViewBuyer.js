@@ -1,14 +1,14 @@
 import React, {Component} from 'react';
 import '../../App.css';
 import './buyer.css';
-import LoggedinFooter from './LoggedinFooter';
-import BuyerHeader from './BuyerHeader';
+// import LoggedinFooter from './LoggedinFooter';
+// import BuyerHeader from './BuyerHeader';
 
 export default class ViewBuyer extends Component {
     render() {
         return (
         <div className="viewBuyerApp">
-            <BuyerHeader/>
+                {/* <BuyerHeader/> */}
             <h1>Welcome Paul</h1>
 
 
@@ -48,7 +48,7 @@ export default class ViewBuyer extends Component {
 
             </div>
 
-         <LoggedinFooter />
+         {/* <LoggedinFooter /> */}
      </div>)
     }
 }

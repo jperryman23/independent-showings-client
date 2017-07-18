@@ -10,7 +10,7 @@ import LogInModal from '../FormsModals/LogInModal';
 import {
     // BrowserRouter as Router,
     // Route,
-    // Link
+    Link
 } from 'react-router-dom'
 
 // const ModalModalExample = () => (
@@ -97,28 +97,29 @@ export default class Header extends Component {
 
 
                 <div className="ui secondary pointing inverted menu">
-                    <a href='/' className="item active" > Home
-                    </a>
+                    <Link to='/' className="item active" >
+                    Home
+                    </Link>
 
-                    <a href='/BuyerLogin' className="item"  >
+                    <Link to='/BuyerLogin' className="item"  >
                         Buyers
-                    </a>
+                    </Link>
 
-                    <a href='/AgentLogin' className="item" >
+                    <Link to='/AgentLogin' className="item" >
                         Agents
-                    </a>
+                    </Link>
 
-                    <a href='/Development' className="item" >
+                    <Link to='/Development' className="item" >
                         Developement
-                    </a>
+                    </Link>
 
-                    <a href="/Contact" className="item" >
+                    <Link to="/Contact" className="item" >
                         Contact
-                    </a>
+                    </Link>
 
-                    <a href='/About' className="item" >
+                    <Link to='/About' className="item" >
                         About
-                    </a>
+                    </Link>
 
                     <div className="right inverted menu">
                         <div className=" active item">

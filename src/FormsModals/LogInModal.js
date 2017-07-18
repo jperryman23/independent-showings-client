@@ -23,10 +23,10 @@ const button1 = (
 
 
 export default class LogInModal extends Component {
-    constructor(){
-        super()
-        // this.state = {username: ''}
-    }
+    // constructor(){
+    //     super()
+    //     this.state = {username: ''}
+    // }
     // handleUserName (event){
     //     this.setState({username:event.target.value})
     //     console.log('un is: ', this.state.username);

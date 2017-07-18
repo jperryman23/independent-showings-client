@@ -3,11 +3,15 @@ import './App.css';
 
 import createHistory from 'history/createBrowserHistory';
 
-import {BrowserRouter as Router, Route} from 'react-router-dom'
+import {
+    // BrowserRouter as Router,
+    Route,
+    // Link
+} from 'react-router-dom'
 
 import Home from './components/Home';
-// import Header from './components/Header';
-// import Footer from './components/Footer';
+import Header from './components/Header';
+import Footer from './components/Footer';
 import BuyerLogin from './components/BuyerLogin';
 import AgentLogin from './components/AgentLogin';
 import Development from './components/Development';
@@ -27,17 +31,10 @@ class App extends Component {
     render() {
         return (
             <div className="App">
+                <Header  />
 
-                <Router>
-
-                    <div>
-                        {/* <Provider store={store}> */}
                             <Route exact path="/" component={Home}/>
 
-                    {/* </Provider> */}
-                    </div>
-
-                </Router>
 
 
                 {/* <Route exact path="/" component={Home}/> */}
@@ -48,6 +45,9 @@ class App extends Component {
                 <Route exact path="/Development" component={Development}/>
                 <Route exact path="/Contact" component={Contact}/>
                 <Route exact path="/About" component={About}/>
+
+
+                <Footer />
 
             </div>
         );

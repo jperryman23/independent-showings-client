@@ -1,7 +1,7 @@
-
 html, body {
     height: 100%;
 }
+
 body {
     background-image: url("/../../images/downtown.jpg");
     background-size: cover;
@@ -11,33 +11,34 @@ body {
 }
 
 .App {
-
     flex: 1 0 auto;
     /*height: 100%;*/
 }
 
 .App-logo-header {
-  animation: App-logo-spin infinite 20s linear;
-  height: 35px;
-  margin-left: 10px;
-  margin-right: 20px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 35px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 15px;
-  margin-left: 10px;
-  margin-right: 20px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 15px;
+    margin-left: 10px;
+    margin-right: 20px;
 }
-
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
-
-.home-container{
+.home-container {
     display: flex;
     flex-direction: column;
 }
@@ -65,7 +66,7 @@ body {
     margin-left: 10px;
 }
 
-.agent-header{
+.agent-header {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -75,7 +76,6 @@ body {
     opacity: .90;
     color: black;
     height: 90px;
-
 }
 
 .ui.inverted.button {
@@ -85,106 +85,120 @@ body {
     color: #FFF;
     text-shadow: none!important;
     box-sizing: none !important;
-
 }
 
 
 /*HOMEPAGE*/
+
 .home-body {
+    /*display: flex;*/
     border: .5px solid white;
     background-color: black;
-    opacity: .70;
+    opacity: .60;
     color: white;
     padding: 1em;
     margin: 2em;
-    height: 575px;
+    height: 495px;
 }
 
 .taglines {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center; }
+    justify-content: center;
+    color: blue;
+    /*color: rgb(7, 233, 227);*/
+}
 
+.pageHeaderTitle {
+    color: rgb(7, 233, 227);
+}
 
 .splash-state {
     font-size: 50px;
     font-weight: bold;
-
 }
 
-
-.contentBox {
+/*.contentBox {
     margin-left: 5em;
-    /*border: 1px solid black;*/
-
+    /*border: 1px solid black;
 }
+
+
+
 
 
 /*ABOUT PAGE CSS*/
 
 .about-page-body {
-    border: 1px solid white;
+    border: .5px solid white;
     background-color: black;
-    opacity: .70;
+    opacity: .60;
     color: white;
     padding: 1em;
     margin: 2em;
-    height: 575px;
-
+    height: 495px;
 }
+
 
 .about-page-content {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
-
 }
-.about-header{
-    margin-bottom: 2rem;
+
+
+.about-header {
+    margin-bottom: 1rem;
     font-family: bold;
     color: white;
     background-color: black;
     padding: 5px;
+    display: flex;
 }
 
+div.three.column.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: space-around;
+}
 
 
 /*DEVELOPMENT PAGE*/
+
 .development-body {
     border: 1px solid white;
     background-color: black;
-    opacity: .70;
+    opacity: .60;
     color: white;
     padding: 1em;
     margin: 2em;
-    height: 575px;
+    height: 495px;
 }
 
-.development-text{
+.development-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
+
 /*CONTACT PAGE*/
 
 .contact-body {
     border: 1px solid white;
     background-color: black;
-    opacity: .70;
+    opacity: .60;
     color: white;
     padding: 1em;
     margin: 2em;
-    height: 575px;
+    height: 495px;
 }
 
-
-.myContactInfo{
-
+.myContactInfo {
     display: flex;
     flex-direction: column;
     font-size: 50px;
@@ -198,9 +212,6 @@ body {
     align-items: center;
 }
 
-
-
-
 .ui.modal>.icon:first-child+*, .ui.modal>:first-child:not(.icon) {
     border-top-left-radius: .2rem;
     border-top-right-radius: .2rem;
@@ -209,36 +220,31 @@ body {
     box-shadow: 10px -10px teal;
 }
 
-
-
 form.ui.form {
     /*border: 1px solid black;*/
     color: black;
     font-stretch: expanded;
     font-weight: bold;
     padding: 5px;
-
 }
 
-.login-form-header{
+.login-form-header {
     font-size: 25px;
     font-weight: bold;
     text-decoration-color: black;
     width: 100%;
-
-
 }
 
 button.ui.button {
-    color:white;
+    color: white;
     font-weight: bold;
     width: 125px;
     background-color: Black;
     opacity: .85;
 }
 
-/*FOOTER */
 
+/*FOOTER */
 
 .splash-footer {
     /*border: 1px solid white;*/
@@ -247,9 +253,9 @@ button.ui.button {
     flex-wrap: nowrap;
     background-color: black;
     opacity: .80;
-    color: rgb(7, 233, 227);
-    position:absolute;
-    bottom:0;
+    color: white;
+    position: absolute;
+    bottom: 0;
     height: 45px;
     width: 100%;
     align-items: center;
@@ -260,6 +266,8 @@ button.ui.button {
 
 
 /*AGENT VIEW*/
+
+
 /*
 .viewBuyerApp{
     background-color: black;
