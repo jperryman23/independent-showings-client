@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import '../App.css'
 import '../Homepage.css'
 
@@ -10,54 +10,53 @@ import '../Homepage.css'
 // import home3 from '../images/home3.jpg'
 // import home4 from '../images/home4.jpg'
 
-
 import {
-  // BrowserRouter as Router,
-  // Route,
+    // BrowserRouter as Router,
+    // Route,
 } from 'react-router-dom'
 
-const myTitle =['See properties on your own! ','See homes first','Immediate Showings','Faster timelines and less hassel', 'Gain the competetive edege']
+const myTitle = ['See properties on your own! ', 'No Agent Needed', 'Immediate Showings', 'Faster timelines and less hassel', 'Gain the competetive edge']
 
 // const myImages = [home1, home2, home3, home4]
 
 export default class Home extends Component {
-    constructor(){
+    constructor() {
         super()
         this.state = {
             title: "Independent Showings, Making it easy",
             // image: home1
         }
     }
-    render(){
+    render() {
 
-        setTimeout(()=>{
+        setTimeout(() => {
             const i = Math.floor(Math.random() * 5)
             this.setState({title: myTitle[i]})
         }, 2000)
-
 
         // setTimeout(()=>{
         //     const i = Math.floor(Math.random() * 5)
         //     this.setState({image: myImages[i]})
         // }, 4000)
 
-        return(
+        return (
         <div className="App">
-
-
-
 
             <div className="home-body">
                 <h2 className="pageHeaderTitle">Home Page</h2>
 
-
                 <div className="taglines">
-                    <h2 className="scrollText"> {this.state.title}</h2>
-
+                    <h2 className="scrollText">
+                        {this.state.title}</h2>
                 </div>
-                {/* <img className="ui small fluid image" src={this.state.image} />  */}
 
+                {/* <img className="ui small fluid image" src={this.state.image} /> */}
 
+                {/* <div class="ui small image">
+                    <svg width="150" height="150">
+                        <img className="ui small fluid image" src={this.state.image} />
+                    </svg>
+                </div> */}
             </div>
 
 

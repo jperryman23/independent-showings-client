@@ -15,18 +15,22 @@ body {
     /*height: 100%;*/
 }
 
+
 .App-logo-header {
     animation: App-logo-spin infinite 20s linear;
-    height: 35px;
-    margin-left: 10px;
-    margin-right: 20px;
+    height: 55px;
+    width: 60px;
+    /*margin-left: 10px;*/
+    margin-right: 10px;
+    /*margin-bottom: 8px;*/
 }
 
 .App-logo {
     animation: App-logo-spin infinite 20s linear;
-    height: 15px;
-    margin-left: 10px;
-    margin-right: 20px;
+    height: 25px;
+    width: 30px;
+    /*margin-left: 30px;*/
+    /*margin-right: 20px;*/
 }
 
 @keyframes App-logo-spin {

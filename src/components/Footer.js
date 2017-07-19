@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import logo from './favicon.ico';
+// import logo from './favicon.ico';
+import logo1 from './is1.png';
 import '../App.css'
 
 // import {
@@ -21,7 +22,7 @@ export default class Footer extends Component {
                     <div>  Independent Showings, LLC </div>
                     <div> Denver, Colorado </div>
                     <div> Phone: 720-530-1459 </div>
-                    <div> <img src={logo} className="App-logo" alt="logo" /> </div>
+                    <div> <img src={logo1} className="App-logo" alt="logo" /> </div>
 
                 </div>
 

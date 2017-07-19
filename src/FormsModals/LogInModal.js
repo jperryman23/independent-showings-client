@@ -54,7 +54,7 @@ export default class LogInModal extends Component {
                                   <div className="ui checkbox">
                                       <input type="checkbox" tabIndex="0"  />
 
-                                      <label>By clicking Sign up or Continue with, I agree to Independent Brokers
+                                      <label>By clicking Sign up or Login with, I agree to Independent Brokers
                                       <a className="" href="/terms-conditions" target="_blank"> Terms and Conditions</a>.
                                       </label>
 
