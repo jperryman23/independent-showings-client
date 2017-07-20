@@ -7,17 +7,13 @@
 
 }
 
-
 .viewBuyerApp{
     background-image: url(/../../images/livingroom.jpg);
     background-size: cover;
-    height: 800px;
-    max-height: 800px;
+    height: 600px;
+    max-height: 600px;
 }
 
-.ui.container {
-
-}
 
 .buyer-content{
     border: 1px solid white;
@@ -25,40 +21,62 @@
     opacity: .75;
     color: white;
     padding: 5px;
-    margin: 1em;
-    height: 525px;
+    margin: 10px;
+    height: 600px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    /*align-content: space-around;*/
-    border: 1px solid black;
+    justify-content: space-between;
     border-radius: 10px;
+    margin-bottom: 15px;
 
 }
 
 h1 {
     color: white;
-    margin-left: 20px;
+    margin-top: 10px;
+    position: absolute;
+    color: rgb(7, 233, 227);
+
 }
 
-
-
-
-.ShowingLog{
-    margin-top: 50px;
-    margin-top: 4em;
-    height: 400px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
 
 h2.propertylogtitle {
-    /*background-color: rgb(7, 233, 227);*/
-    background-color: rgb(4, 125, 107);
+    display: flex;
     color: white;
     font-weight: bold;
-    padding: 5px;
-    font-size: 30px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.theList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*width: 500px;*/
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.ui.table thead th {
+    cursor: auto;
+    background: rgb(14, 85, 158);
+    text-align: inherit;
+    color: white;
+    /*padding: .92857143em .78571429em;*/
+    vertical-align: inherit;
+    font-style: none;
+    font-weight: bold;
+    text-transform: none;
+    border-bottom: 1px solid rgba(34,36,38,.1);
+    border-left: none;
+}
+
+tbody{
+    background-color: black;
+    opacity: .85;
+    color: white;
 }
 
 .loggedin-footer {
@@ -78,4 +96,16 @@ h2.propertylogtitle {
     font-size: 12px;
     font-family: sans-serif;
     font-weight: bold;
+}
+
+
+.ui.inverted.button {
+    /* margin-right: 20px; */
+    opacity: .80;
+    width: 200px;
+}
+
+.ui.icon.input input {
+padding-right: 2.67142857em!important;
+    width: 300px;
 }

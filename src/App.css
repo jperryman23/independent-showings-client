@@ -17,12 +17,12 @@ body {
 
 
 .App-logo-header {
-    animation: App-logo-spin infinite 20s linear;
+    /*animation: App-logo-spin infinite 20s linear;*/
     height: 55px;
     width: 60px;
-    /*margin-left: 10px;*/
+    margin-left: 10px;
     margin-right: 10px;
-    /*margin-bottom: 8px;*/
+    margin-bottom: 8px;
 }
 
 .App-logo {
@@ -83,7 +83,7 @@ body {
 }
 
 .ui.inverted.button {
-    margin-right: 15px;
+    margin-right: 20px;
     opacity: .80;
     width: 150px;
     color: #FFF;

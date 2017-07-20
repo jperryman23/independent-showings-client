@@ -10,8 +10,8 @@ import {
 } from 'react-router-dom'
 
 import Home from './components/Home';
-import Header from './components/Header';
-import Footer from './components/Footer';
+// import Header from './components/Header';
+// import Footer from './components/Footer';
 import BuyerLogin from './components/BuyerLogin';
 import AgentLogin from './components/AgentLogin';
 import Development from './components/Development';
@@ -31,7 +31,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-                <Header  />
+
 
                             <Route exact path="/" component={Home}/>
 
@@ -47,7 +47,7 @@ class App extends Component {
                 <Route exact path="/About" component={About}/>
 
 
-                <Footer />
+
 
             </div>
         );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
-// import Header from './Header';
-// import Footer from './Footer';
+import Header from './Header';
+import Footer from './Footer';
 
 
 
@@ -11,7 +11,7 @@ export default class Development extends Component {
         return(
             <div className="App">
 
-
+                <Header  />
             <div className="development-body">
 
                 <h2 className="pageHeaderTitle"> Developent Page</h2>
@@ -22,6 +22,8 @@ export default class Development extends Component {
             </div>
 
             </div>
+
+        <Footer />
 
         </div>
         )
