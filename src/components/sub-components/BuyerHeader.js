@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import logo from '../favicon.ico';
+import logo1 from './is1.png';
 import '../../App.css'
 // import {Modal, Menu, Segment} from 'semantic-ui-react';
 
@@ -20,7 +20,7 @@ class BuyerHeader extends Component {
 
                     <div className="splash-title">
                         <div>
-                            <img src={logo} className="App-logo-header" alt="logo"/>
+                            <img src={logo1} className="App-logo-header" alt="logo"/>
                         </div>
                         <div className="title-name">
                             Independent Showings |
@@ -33,7 +33,7 @@ class BuyerHeader extends Component {
                     <div>
 
                         <div className="large ui black animated fade button" tabIndex="0">
-                            <div className="visible content">Log Out
+                            <div className="visible content"> <a href='/'> Log Out </a>
                             </div>
                             <div className="hidden content">
                                 Goodbye

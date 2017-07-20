@@ -21,6 +21,7 @@ export default class LoggedinFooter extends Component {
                     <div>  Independent Showings, LLC </div>
                     <div> Denver, Colorado </div>
                     <div> Phone: 720-530-1459 </div>
+                    <div> <a href="https://wwwindependingshowings.com">www.independingshowings.com </a></div>
                     <div> <img src={logo1} className="App-logo" alt="logo" /> </div>
 
                 </div>
