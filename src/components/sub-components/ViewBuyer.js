@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import ReactDom from 'react-dom';
-import Modal from 'react-modal';
+// import ReactDom from 'react-dom';
+// import Modal from 'react-modal';
 
 import '../../App.css';
 import './buyer.css';
@@ -112,7 +112,7 @@ export default class ViewBuyer extends Component {
                                     <td>1234 Manor Lane</td>
                                     <td>Jules Perryman</td>
                                     <td>Apex Real Estate</td>
-                                    <td>303-11111</td>
+                                    <td>303-111-1133</td>
                                 </tr>
                                 <tr>
                                     <td>

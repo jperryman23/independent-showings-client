@@ -6,7 +6,7 @@ import '../../App.css'
 import {
     // BrowserRouter as Router,
     // Route,
-    // Link
+    Link
 } from 'react-router-dom'
 
 class BuyerHeader extends Component {
@@ -32,13 +32,20 @@ class BuyerHeader extends Component {
 
                     <div>
 
-                        <div className="large ui black animated fade button" tabIndex="0">
-                            <div className="visible content"> <a href='/'> Log Out </a>
+                            <Link to='/'>
+                        <button className="ui black button">
+                            Log Out
+                        </button>
+                        </Link>
+
+
+                        {/* <div className="large ui black animated fade button" >
+                            <div className="visible content"> <Link to='/'> Log Out </Link>
                             </div>
                             <div className="hidden content">
                                 Goodbye
                             </div>
-                        </div>
+                        </div> */}
 
                     </div>
 

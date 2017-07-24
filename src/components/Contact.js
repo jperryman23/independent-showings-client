@@ -23,20 +23,23 @@ class Contact extends Component {
                     <h2 className="pageHeaderTitle">Contact Page</h2>
 
                     <div className="myContactInfo">
-                        <h1>
-                            Jules R. Perryman</h1>
+                        <h1>Jules R. Perryman</h1>
+                        <br></br>
                         <h3>720.530.1459</h3>
+                        <br></br>
                         <h3>Galvainze G[46]</h3>
+                        <br></br>
                         <a href="www.julesperryman.com">WEBSITE</a>
                     </div>
 
-                    {/* <div className="contacts-list">
-                        <h3>Contact List:</h3>
-                        <ContactList contacts={this.props.contactList}/>
-
-                    </div> */}
 
                 </div>
+                <div className="contacts-list">
+                    <h3>Contact List:</h3>
+                    <ContactList contacts={this.props.contactList}/>
+
+                </div>
+                
                 <Footer />
             </div>
 

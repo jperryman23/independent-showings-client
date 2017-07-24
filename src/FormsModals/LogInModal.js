@@ -3,6 +3,11 @@ import { Modal } from 'semantic-ui-react';
 
 import '../App.css';
 
+import {
+    // BrowserRouter as Router,
+    // Route,
+    Link
+} from 'react-router-dom'
 
 const button1 = (
 <div className="large ui inverted blue animated fade button" tabIndex="0">
@@ -61,7 +66,12 @@ export default class LogInModal extends Component {
                                   </div>
 
                                   </div>
-                                     <button className="ui button" type="submit" id="loginbutton"> <a href='/ViewBuyer'>Login</a></button>
+                                  {/* <a src='/ViewBuyer'> <button className="ui button"> Login </button> </a> */}
+
+                                  <Link to='/ViewBuyer'>
+                                     <button className="ui button" > Login
+                                     </button>
+                                 </Link>
                                   </form>
 
                   </Modal.Content>

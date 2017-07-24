@@ -85,7 +85,7 @@ export default class Header extends Component {
 
                         <div className="large ui inverted blue animated fade button" tabIndex="0">
                             <div className="visible content">Sign up
-                            </div>
+                        </div>
                             <div className="hidden content">
                                 New User
                             </div>
