@@ -2,8 +2,8 @@
 
 .ui.black.button {
     margin-right: 2em;
-    width: 160px;
-    height: 40px;
+    width: 180px;
+    height: 50px;
     border: 2px solid rgb(7, 233, 227);
     border-radius: 5px;
 
@@ -100,7 +100,12 @@ tbody{
     font-weight: bold;
 }
 
-
+.ui.inverted.green.button, .ui.inverted.green.buttons .button {
+    background-color: transparent;
+    /* box-shadow: 0 0 0 2px #2ECC40 inset!important; */
+    color: #2ECC40;
+    margin-left: 15px;
+}
 .ui.inverted.button {
     /* margin-right: 20px; */
     opacity: .80;
@@ -110,4 +115,14 @@ tbody{
 .ui.icon.input input {
 padding-right: 2.67142857em!important;
     width: 300px;
+}
+
+/*tr:hover{
+    border: dotted .5px gray;
+}*/
+
+
+a {
+    font-size: 15px;
+    /*font-weight: bold;*/
 }

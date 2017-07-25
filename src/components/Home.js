@@ -40,30 +40,39 @@ export default class Home extends Component {
         // }, 4000)
 
         return (
-        <div className="App">
-            <Header  />
+            <div className="App">
+                <Header/>
 
-            <div className="home-body">
-                <h2 className="pageHeaderTitle">Home Page</h2>
+                <div className="home-body">
+                    <h2 className="pageHeaderTitle">Home Page</h2>
 
-                <div className="taglines">
-                    <h2 className="scrollText">
-                        {this.state.title}</h2>
-                </div>
+                    <div className="taglines">
+                        <h2 className="scrollText">
+                            {this.state.title}</h2>
 
-                {/* <img className="ui small fluid image" src={this.state.image} /> */}
+                    </div>
 
-                {/* <div class="ui small image">
+                    <div className="signature">
+                        <div>
+                            <p>
+                                JULES PERRYMAN &nbsp; &nbsp; | &nbsp; &nbsp; CAPSTONE PROJECT &nbsp; &nbsp; | &nbsp; &nbsp; SUMMER 2017</p>
+                        </div>
+                        <img className="g46logo"  alt="logo" src='../images/g46logo.png'/>
+                    </div>
+
+                    {/* <img className="ui small fluid image" src={this.state.image} /> */}
+
+                    {/* <div class="ui small image">
                     <svg width="150" height="150">
                         <img className="ui small fluid image" src={this.state.image} />
                     </svg>
                 </div> */}
+
+                </div>
+
+                <Footer/>
+
             </div>
-
-
-        <Footer />
-
-        </div>
         )
     }
 }

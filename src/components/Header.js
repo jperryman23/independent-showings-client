@@ -102,6 +102,10 @@ export default class Header extends Component {
                     Home
                     </Link>
 
+                    <Link to='/About' className="item" >
+                        About
+                    </Link>
+
                     <Link to='/BuyerLogin' className="item"  >
                         Buyers
                     </Link>
@@ -118,9 +122,7 @@ export default class Header extends Component {
                         Contact
                     </Link>
 
-                    <Link to='/About' className="item" >
-                        About
-                    </Link>
+
 
                     <div className="right inverted menu">
                         <div className=" active item">

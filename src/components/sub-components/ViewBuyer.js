@@ -31,7 +31,7 @@ export default class ViewBuyer extends Component {
                         <h2>Search Network Properties</h2>
 
                         <div className="ui icon input">
-                            <input type="text" placeholder="Search for a property..."/>
+                            <input type="text" placeholder="Search for a property..." />
                             <i className="search link icon"></i>
                         </div>
 
@@ -52,7 +52,7 @@ export default class ViewBuyer extends Component {
                             <tbody>
                                 <tr>
                                     <td>
-                                        <a>15246</a>
+                                        <a>152346</a>
                                     </td>
                                     <td>May 21, 2017</td>
                                     <td>1822 W 33rd
@@ -82,7 +82,7 @@ export default class ViewBuyer extends Component {
 
                         <table className="ui celled table">
 
-                            <thead >
+                            <thead>
                                 <tr>
                                     <th>MLS ID</th>
                                     <th>Showing Date</th>
@@ -116,7 +116,7 @@ export default class ViewBuyer extends Component {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a>59331</a>
+                                        <a>597331</a>
                                     </td>
                                     <td>July 5, 2017</td>
                                     <td>1111 Gaylord Street</td>
@@ -136,7 +136,7 @@ export default class ViewBuyer extends Component {
                                 </tr>
                                 <tr>
                                     <td>
-                                        <a>7878</a>
+                                        <a>783278</a>
                                     </td>
                                     <td>August 13, 2017</td>
                                     <td>3632 W Harvard Ave</td>

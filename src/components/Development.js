@@ -18,7 +18,14 @@ export default class Development extends Component {
 
             <div className="development-text">
 
-                <h3> In the Pipeline </h3>
+                <h2> <u>In the Pipeline</u> </h2>
+                    <ul>
+                        <li> INVESTOR OFFERING MEMORANDUMS </li>
+                        <li> PENDING PROVISIONAL PATENT   </li>
+                        <li> INVESTMENT CAPITAL </li>
+                        <li> REAL ESTATE COMMISSION APPROVAL </li>
+                        <li> USER CREDENTIAL VERIFICATION </li>
+                    </ul>
             </div>
 
             </div>

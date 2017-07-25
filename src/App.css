@@ -107,7 +107,7 @@ body {
 
 .taglines {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: blue;
@@ -116,6 +116,7 @@ body {
 
 .pageHeaderTitle {
     color: rgb(7, 233, 227);
+    
 }
 
 .splash-state {
@@ -276,3 +277,23 @@ button.ui.button {
 .viewBuyerApp{
     background-color: black;
 }*/
+
+
+li {
+    padding: 1em;
+    font-weight: bold;
+}
+
+
+.g46logo {
+    height: 50px;
+}
+
+
+.signature {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:  space-between;
+    margin-top: 25em;
+}

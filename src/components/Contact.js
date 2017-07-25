@@ -27,7 +27,7 @@ class Contact extends Component {
                         <br></br>
                         <h3>720.530.1459</h3>
                         <br></br>
-                        <h3>Galvainze G[46]</h3>
+                        <h3>Galvainze g[46]</h3>
                         <br></br>
                         <a href="www.julesperryman.com">WEBSITE</a>
                     </div>
@@ -39,7 +39,7 @@ class Contact extends Component {
                     <ContactList contacts={this.props.contactList}/>
 
                 </div>
-                
+
                 <Footer />
             </div>
 
