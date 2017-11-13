@@ -47,7 +47,8 @@ export default class LogInModal extends Component {
                            <h3 className="login-form-header">Please Login</h3>
                           <div className="ten wide field">
                               <label>Buyer ID || Agent ID</label>
-                              <input type="text" name="AgentID" placeholder="ID Number" onChange={this.handleUserName} />
+                              <input type="text" name="AgentID" placeholder="ID Number"  onChange={this.handleUserName}
+                              required />
                           </div>
 
                           <div className="ten wide field">

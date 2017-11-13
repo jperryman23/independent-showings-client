@@ -3,15 +3,18 @@ import PropTypes from 'prop-types';
 
 export default function ContactList({contacts}) {
     const emptyMessage = (
-        <p>You have no contacts in your collection.
+        <p>You have no registered Agents.
         </p>
     );
 
     const contactList = (
-        <div className="container">
+        <div className="ui grid">
 
             {contacts.map(contact => {
-                return <div key={contact._id}>{contact.firstname} {contact.lastname}{contact._id}
+                return <div key={contact._id}>
+
+                    <div className="four wide column">{contact.firstname} {contact.lastname}</div>
+
                 </div>
             })}
         </div>

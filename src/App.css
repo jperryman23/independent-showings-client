@@ -116,7 +116,7 @@ body {
 
 .pageHeaderTitle {
     color: rgb(7, 233, 227);
-    
+
 }
 
 .splash-state {
@@ -215,6 +215,7 @@ div.three.column.row{
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 5em;
 }
 
 .ui.modal>.icon:first-child+*, .ui.modal>:first-child:not(.icon) {
